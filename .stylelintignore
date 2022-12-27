@@ -1,0 +1,14 @@
+node_modules/*
+/.husky/
+/dist/
+/static/css/common.css
+/src/assets/
+/public/
+# 其他类型文件
+*.ts
+*.jpg
+*.svg
+*.png
+*.js
+*.json
+

@@ -1,26 +1,8 @@
 [
   {
-    "compName": "Button",
-    "compZhName": "按钮",
-    "compDesc": "这是一个按钮",
-    "compClassName": "button"
-  },
-  {
-    "compName": "Test",
-    "compZhName": "测试",
-    "compDesc": "测试",
-    "compClassName": "test"
-  },
-  {
     "compName": "TableFilter",
-    "compZhName": "表格筛选组件",
-    "compDesc": "基于列表的筛选组件",
+    "compZhName": "业务筛选组件",
+    "compDesc": "支持各种类型的高级搜索组件",
     "compClassName": "table-filter"
-  },
-  {
-    "compName": "Filter",
-    "compZhName": "高级搜索",
-    "compDesc": "默认：这是一个新组件",
-    "compClassName": "filter"
   }
 ]
