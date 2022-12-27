@@ -3,7 +3,7 @@
 node_modules
 dist
 stats.html
-/dist/*
+# /dist/*
 *.zip
 
 # local env files

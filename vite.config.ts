@@ -5,17 +5,18 @@ import path from 'path'
 import dts from 'vite-plugin-dts'
 // https://vitejs.dev/config/
 export default defineConfig({
-  // resolve: {
-  //   alias: {
-  //     '@': path.resolve(__dirname, './src'),
-  //     packages: path.resolve(__dirname, './packages'),
-  //   },
-  // },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+      packages: path.resolve(__dirname, './packages'),
+    },
+  },
   plugins: [
     vue({ include: [/\.vue$/, /\.md$/] }),
     Markdown(),
     dts()
   ],
+  base: '/components',
   build: {
     outDir: 'yyc-vue-ui', // 输出文件名称
     lib: {

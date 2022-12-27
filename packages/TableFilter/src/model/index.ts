@@ -26,7 +26,7 @@ export default (props: any, clintWidth: any, emit: any) => {
     }
   }
   const itemWidth = computed(() => {
-    return props.filterCount ? (100 / getData(...props.filterCount)) : getData(33.33, 25, 20)
+    return props.filterCount ? (100 / getData(props.filterCount[0], props.filterCount[1], props.filterCount[2])) : getData(33.33, 25, 20)
   })
   const showItems = computed(() => {
     if (!state.isExpand) {
