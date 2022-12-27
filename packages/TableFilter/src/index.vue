@@ -41,6 +41,7 @@
       </a-button>
       <a-button
         v-if="props.isShowReset"
+        class="reset-btn"
         @click="onReset"
       >
         重置
@@ -227,9 +228,9 @@ const props = defineProps({
     default: true
   },
   // 自定义filteritem的宽度
-  filterWidth: {
-    type: Number,
-    default: null
+  filterCount: {
+    type: Array,
+    default: () => ([3, 4, 5])
   },
   // 自定义label的宽度
   labelWidth: {
@@ -286,4 +287,7 @@ defineExpose({
   margin-left: auto;
 }
 
+.reset-btn {
+  margin-left: 8px;
+}
 </style>

@@ -4,5 +4,11 @@
     "compZhName": "业务筛选组件",
     "compDesc": "支持各种类型的高级搜索组件",
     "compClassName": "table-filter"
+  },
+  {
+    "compName": "TooltipOver",
+    "compZhName": "提示信息",
+    "compDesc": "鼠标放入显示全部信息",
+    "compClassName": "tooltip-over"
   }
 ]

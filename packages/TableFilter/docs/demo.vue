@@ -1,6 +1,9 @@
 <template>
   <div>
-    <y-table-filter :items="fileds" />
+    <y-table-filter
+      :items="fileds"
+      :filter-count="[4,5,6]"
+    />
   </div>
 </template>
 <script lang="ts" setup>
