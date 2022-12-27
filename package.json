@@ -21,6 +21,7 @@
     "handlebars": "^4.7.7",
     "inquirer": "^8.2.0",
     "less": "^4.1.2",
+    "vite-plugin-dts": "^1.7.1",
     "vite-plugin-md": "^0.14.1",
     "vue": "^3.2.25",
     "vue-clipboard3": "^2.0.0",

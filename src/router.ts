@@ -6,25 +6,25 @@
  * 根据 /packages 目录下的组件所生成的组件类侧边导航栏配置，请勿手动修改
  */
 
- import { createRouter, createWebHashHistory, RouterOptions } from 'vue-router'
+import { createRouter, createWebHashHistory, RouterOptions } from 'vue-router'
 
- const routes = [{
-    title: '业务筛选组件',
-    name: 'TableFilter',
-    path: '/components/TableFilter',
-    component: () => import('/packages/TableFilter/docs/README.md'),
-  }];
+const routes = [{
+  title: '业务筛选组件',
+  name: 'TableFilter',
+  path: '/components/TableFilter',
+  component: () => import('/packages/TableFilter/docs/README.md'),
+}]
  
- const routerConfig = {
-   history: createWebHashHistory(),
-   routes,
-   scrollBehavior(to: any, from: any) {
-     if (to.path !== from.path) {
-       return { top: 0 };
-     }
-   },
- };
+const routerConfig = {
+  history: createWebHashHistory(),
+  routes,
+  scrollBehavior(to: any, from: any) {
+    if (to.path !== from.path) {
+      return { top: 0 }
+    }
+  },
+}
  
- const router = createRouter(routerConfig as RouterOptions);
+const router = createRouter(routerConfig as RouterOptions)
  
- export default router;
+export default router
