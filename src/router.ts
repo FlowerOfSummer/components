@@ -10,7 +10,7 @@ import { createRouter, createWebHistory, RouterOptions } from 'vue-router'
 
 const routes = [
   {
-    path: '/components/',
+    path: '/',
     redirect: '/components/TableFilter'
   },
   {
