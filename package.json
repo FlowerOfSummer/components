@@ -11,7 +11,8 @@
     "lint-staged": "lint-staged",
     "lint": "eslint \"**/**/*.{ts, js,jsx,vue}\"",
     "commitlint": "commitlint --config commitlint.config.js -e -V",
-    "lint:stylelint": "stylelint --fix \"**/*.{vue,less}\""
+    "lint:stylelint": "stylelint --fix \"**/*.{vue,less}\"",
+    "postinstall": "husky install"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.0.10",
@@ -41,7 +42,7 @@
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-vue": "latest",
-    "husky": "^8.0.1",
+    "husky": "^8.0.0",
     "less": "^4.1.2",
     "less-loader": "^11.0.0",
     "lint-staged": "^13.0.2",
