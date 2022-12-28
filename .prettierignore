@@ -3,5 +3,5 @@
 
 **/*.svg
 **/*.sh
-
+/yyc-vue-ui/*
 /public/*

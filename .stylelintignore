@@ -1,5 +1,6 @@
 node_modules/*
 /.husky/
+/yyc-vue-ui/*
 /dist/
 /static/css/common.css
 /src/assets/
