@@ -9,7 +9,7 @@
     "prepare": "husky install",
     "preview": "vite preview",
     "lint-staged": "lint-staged",
-    "lint": "eslint \"src/**/*.{ts, js,jsx,vue}\"",
+    "lint": "eslint \"**/**/*.{ts, js,jsx,vue}\"",
     "commitlint": "commitlint --config commitlint.config.js -e -V",
     "lint:stylelint": "stylelint --fix \"**/*.{vue,less}\""
   },
