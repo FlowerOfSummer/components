@@ -16,7 +16,7 @@ export default defineConfig({
     Markdown(),
     dts()
   ],
-  // base: '/components',
+  base: '/components',
   // build: {
   //   outDir: 'yyc-vue-ui', // 输出文件名称
   //   lib: {
