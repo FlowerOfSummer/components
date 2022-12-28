@@ -1,3 +1,4 @@
 {
-  "**/**/*.{js,ts,tsx,vue}": "yarn run lint"
+  "src/**/*.{js,ts,tsx,vue}": "yarn run lint",
+  "packages/**/*.{js,ts,tsx,vue}": "yarn run lint"
 }

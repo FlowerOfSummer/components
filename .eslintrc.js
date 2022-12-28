@@ -58,6 +58,15 @@ module.exports = {
         mode: 'strict'
       }
     ],
-    '@typescript-eslint/no-explicit-any': ['off']
+    '@typescript-eslint/no-explicit-any': ['off'],
+    '@typescript-eslint/ban-types': [
+      'error',
+      {
+        types: {
+          '{}': false,
+          Function: false
+        }
+      }
+    ]
   }
 }

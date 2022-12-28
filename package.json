@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
+    "build:com": "vue-tsc --noEmit && vite build --config ./.build/components.config.ts",
     "gen": "node ./script/genNewComp/index.js",
     "prepare": "husky install",
     "preview": "vite preview",
