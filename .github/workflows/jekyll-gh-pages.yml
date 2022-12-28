@@ -31,8 +31,8 @@ jobs:
         uses: actions/configure-pages@v2
       - name: Build
         run: |
-          npm install # 安装依赖
-          npm run build # 打包前端代码到生产环境（目标路径为：server/public）
+          npm install
+          npm run build
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
@@ -40,7 +40,7 @@ jobs:
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
-  build:com:
+
   # Deployment job
   deploy:
     environment:
