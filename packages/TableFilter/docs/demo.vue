@@ -134,5 +134,5 @@ const fileds = [
       placeholder: '请输入'
     }
   }
-]
+];
 </script>
