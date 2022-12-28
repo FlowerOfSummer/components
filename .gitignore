@@ -1,7 +1,7 @@
 # Logs
 .DS_Store
 node_modules
-dist
+# dist
 stats.html
 # /dist/*
 *.zip
