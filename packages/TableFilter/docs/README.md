@@ -49,16 +49,31 @@ import demo from './demo.vue'
 
 ### 属性（主要针对 select 类型的属性）
 
-|       参数        |                   说明                   |          类型           | 可选值 | 默认值 | 是否必填 |
-| :---------------: | :--------------------------------------: | :---------------------: | :----: | :----: | :------: |
-|  `defaultValue`   |                  默认值                  | [String, Array, Number] |   -    |   -    |    否    |
-| `isImdateRequest` |            是否修改后立即请求            |         boolean         |   -    |  true  |    否    |
-|   `customAttrs`   |               组件原生属性               |         Object          |   -    |   -    |    否    |
-|     `options`     |  组件（select/tree-select）绑定 options  |          Array          |   -    |   []   |    否    |
-|  `optionsRquest`  |         获取 options 的接口方法          |        Function         |   -    |   -    |    否    |
-|  `optionsParams`  |           联动的字段(联动请求)           |          Array          |   -    |   []   |    否    |
-| `isFixedDefault`  |    更新 options 后，使用默认值 value     |         boolean         |   -    | false  |    否    |
-|    `isInData`     | options 请求返回数据是否直接在 data 返回 |         boolean         |   -    | false  |    否    |
-|    `isShowAll`    |       是否给 options 新增全部选项        |         boolean         |   -    |  true  |    否    |
-|    `dataFiled`    |   options 数据请求返回在 data 中的字段   |         string          |   -    | items  |    否    |
-|   `isDefault0`    |          是否用第一项作为默认值          |         boolean         |   -    | false  |    否    |
+|       参数        |                   说明                   |          类型           |    可选值     | 默认值 | 是否必填 |
+| :---------------: | :--------------------------------------: | :---------------------: | :-----------: | :----: | :------: |
+|      `label`      |                 筛选名称                 |         string          |       -       |   -    |    是    |
+|      `type`       |               筛选组件类型               |         string          | ComponentType |   -    |    是    |
+|      `prop`       |                 绑定字段                 |         string          |       -       |   -    |    是    |
+|  `defaultValue`   |                  默认值                  | [String, Array, Number] |       -       |   -    |    否    |
+| `isImdateRequest` |            是否修改后立即请求            |         boolean         |       -       |  true  |    否    |
+|   `customAttrs`   |               组件原生属性               |         Object          |       -       |   -    |    否    |
+|     `options`     |  组件（select/tree-select）绑定 options  |          Array          |       -       |   []   |    否    |
+|  `optionsRquest`  |         获取 options 的接口方法          |        Function         |       -       |   -    |    否    |
+|  `optionsParams`  |           联动的字段(联动请求)           |          Array          |       -       |   []   |    否    |
+| `isFixedDefault`  |    更新 options 后，使用默认值 value     |         boolean         |       -       | false  |    否    |
+|    `isInData`     | options 请求返回数据是否直接在 data 返回 |         boolean         |       -       | false  |    否    |
+|    `isShowAll`    |       是否给 options 新增全部选项        |         boolean         |       -       |  true  |    否    |
+|    `dataFiled`    |   options 数据请求返回在 data 中的字段   |         string          |       -       | items  |    否    |
+|   `isDefault0`    |          是否用第一项作为默认值          |         boolean         |       -       | false  |    否    |
+
+## componentType
+
+```ts
+enum ComponentType {
+  input = 'input',
+  select = 'select',
+  'tree-select' = 'tree-select',
+  'time-range' = 'time-range',
+  textarea = 'textarea'
+}
+```
